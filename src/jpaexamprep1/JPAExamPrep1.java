@@ -25,6 +25,8 @@ public class JPAExamPrep1 {
         Project p1 = new Project();
         Project p2 = new Project();
         p1.setName("Test");
+        
+        
         p2.setName("Java");
 
         Projectuser pu1 = new Projectuser();
@@ -36,6 +38,8 @@ public class JPAExamPrep1 {
         Task t2 = new Task();
         t2.setName("JavaTask");
         t1.setName("TestTask");
+        
+        //Test
         t2.setProjectId(p1.getProjectId());
         t2.setProjectId(p2.getProjectId());
 
