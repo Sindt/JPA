@@ -60,6 +60,11 @@ public class Projectuser implements Serializable {
         this.projectUserID = projectUserID;
     }
 
+    public List<Project> getProjectList() {
+        return projectList;
+    }
+    
+
     public Long getProjectUserID() {
         return projectUserID;
     }

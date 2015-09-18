@@ -6,7 +6,6 @@
 package jpaexamprep1;
 
 import java.io.Serializable;
-import java.math.BigInteger;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -49,7 +48,7 @@ public class Task implements Serializable {
     @Column(name = "hoursUsed")
     private Integer hoursUsed;
     @Column(name = "project_id")
-    private BigInteger projectId;
+    private Long projectId;
 
     public Task() {
     }
@@ -98,13 +97,14 @@ public class Task implements Serializable {
         this.hoursUsed = hoursUsed;
     }
 
-    public BigInteger getProjectId() {
+    public Long getProjectId() {
         return projectId;
     }
 
-    public void setProjectId(BigInteger projectId) {
+    public void setProjectId(Long projectId) {
         this.projectId = projectId;
     }
+
 
     @Override
     public int hashCode() {

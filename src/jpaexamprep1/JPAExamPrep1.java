@@ -36,6 +36,8 @@ public class JPAExamPrep1 {
         Task t2 = new Task();
         t2.setName("JavaTask");
         t1.setName("TestTask");
+        t2.setProjectId(p1.getProjectId());
+        t2.setProjectId(p2.getProjectId());
 
   
         em.getTransaction().begin();
@@ -43,8 +45,8 @@ public class JPAExamPrep1 {
         em.merge(p2);
         em.merge(pu1);
         em.merge(pu2);
-        em.persist(t1);
-        em.persist(t2);
+        em.merge(t1);
+        em.merge(t2);
 //        em.persist(p1);
 //        em.persist(p2);
 //        em.persist(pu2);
