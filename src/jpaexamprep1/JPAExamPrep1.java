@@ -27,8 +27,10 @@ public class JPAExamPrep1 {
         Projectuser pu = f.createUser("Jens", "Jens@mail.dk");
         System.out.println("Find user metode = " + f.findUser(1L).getUsername());
         
+        
+        System.out.println("getAllUsers: ");
         for (Projectuser user : f.getAllUsers()) {
-            System.out.println("getAllUser metode = " + user.getUsername() + " - " + user.getEmail());
+            System.out.println(user.getUsername() + " - " + user.getEmail());
         }
         
 
