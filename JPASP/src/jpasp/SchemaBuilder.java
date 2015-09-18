@@ -5,17 +5,16 @@
  */
 package jpasp;
 
+import javax.persistence.Persistence;
+
 /**
  *
  * @author Sindt
  */
-public class JPASP {
-
-    /**
-     * @param args the command line arguments
-     */
+public class SchemaBuilder {
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+         Persistence.generateSchema("JPAExamPrep1PU", null);
     }
     
 }
